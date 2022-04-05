@@ -72,6 +72,10 @@
 //         console.log("rejact");
 
 // })
+
+
+////////////////////////setTimeOut//////////////////////
+
 // console.log("start");
 // console.time()
 // let time = 3;
@@ -82,6 +86,48 @@
 //     }, time * 1000);
 // }
 // console.log("End");
+
+////////////////////////////setInterval//////////////////////////////////
+
+// program to stop the setInterval() method after five times
+
+// let count = 0;
+
+// function creation
+// let interval = setInterval(function () {
+
+// increasing the count by 1
+// count += 1;
+
+// whencount equals to 5, stop the function
+// if (count === 5) {
+// clearInterval(interval);
+// }
+
+// display the current time
+// let dateTime = new Date();
+// let time = dateTime.toLocaleTimeString();
+// console.log(time);
+
+// }, 2000);
+
+/////////////////////////Exaple: 2///////////////////////////
+console.log("Start");
+console.log("Mid");
+
+let count = 0
+let interval = setInterval(() => {
+    count = count + 3000;
+    if (count == 15000) {
+        clearInterval(interval)
+    }
+    console.log(`${count} Milisecend`);
+
+}, 3000);
+console.log("End");
+
+
+
 
 /////////////////////////////// Promise ////////////////////////////
 
@@ -120,3 +166,4 @@
 // });
 
 ////////////////////////////////////////////////// example 3////////////////////////////////
+
