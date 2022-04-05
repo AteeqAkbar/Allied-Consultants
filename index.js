@@ -72,8 +72,7 @@
 //         console.log("rejact");
 
 // })
-
-console.log("start");
+// console.log("start");
 // console.time()
 // let time = 3;
 // for (let i = 0; i <= 4; i++) {
@@ -82,8 +81,22 @@ console.log("start");
 //         time = time + 3
 //     }, time * 1000);
 // }
+// console.log("End");
 
-setInterval(() => {
-    console.log(`${time}`)
-}, 3000);
-console.log("End");
+// Promise 
+function fun1() {
+    return new Promise(function (resolve, rejact) {
+        setTimeout(() => {
+            const error = false
+            if (!error) {
+                console.log("fuction : your promise is resolve");
+                resolve();
+
+            } else {
+                console.log("fuction : your promise is not resolve");
+                rejact("Sorry not Fulfill")
+            }
+        }, 2000);
+    })
+}
+fun1().then(() => { console.log("Ateeq: Thanks for Resolveing"); }).catch((error) => { console.log("Very Bad bro " + error); })
