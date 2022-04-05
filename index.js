@@ -83,20 +83,40 @@
 // }
 // console.log("End");
 
-// Promise 
-function fun1() {
-    return new Promise(function (resolve, rejact) {
-        setTimeout(() => {
-            const error = false
-            if (!error) {
-                console.log("fuction : your promise is resolve");
-                resolve();
+/////////////////////////////// Promise ////////////////////////////
 
-            } else {
-                console.log("fuction : your promise is not resolve");
-                rejact("Sorry not Fulfill")
-            }
-        }, 2000);
-    })
-}
-fun1().then(() => { console.log("Ateeq: Thanks for Resolveing"); }).catch((error) => { console.log("Very Bad bro " + error); })
+////////////////////////////// example : 1//////////////////////////
+// function fun1() {
+//     return new Promise(function (resolve, rejact) {
+//         setTimeout(() => {
+//             const error = false
+//             if (!error) {
+//                 console.log("fuction : your promise is resolve");
+//                 resolve();
+
+//             } else {
+//                 console.log("fuction : your promise is not resolve");
+//                 rejact("Sorry not Fulfill")
+//             }
+//         }, 2000);
+//     })
+// }
+// fun1().then(() => { console.log("Ateeq: Thanks for Resolveing"); }).catch((error) => { console.log("Very Bad bro " + error); })
+
+// ///////////////////////////////Example : 2//////////////////////////
+
+// myPromise = new Promise((resolve, rejact) => {
+//     let num = 0;
+//     if (num == 0)
+//         resolve("Num = 0")
+//     else
+//         rejact("Error")
+// })
+
+// myPromise.then((result) => {
+//     console.log(result);
+// }).catch((err) => {
+//     console.log(err);
+// });
+
+////////////////////////////////////////////////// example 3////////////////////////////////
