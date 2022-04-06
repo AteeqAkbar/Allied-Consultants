@@ -87,6 +87,9 @@
 // }
 // console.log("End");
 
+//
+//
+//
 ////////////////////////////setInterval//////////////////////////////////
 
 // program to stop the setInterval() method after five times
@@ -112,19 +115,19 @@
 // }, 2000);
 
 /////////////////////////Exaple: 2///////////////////////////
-console.log("Start");
-console.log("Mid");
+// console.log("Start");
+// console.log("Mid");
 
-let count = 0
-let interval = setInterval(() => {
-    count = count + 3000;
-    if (count == 15000) {
-        clearInterval(interval)
-    }
-    console.log(`${count} Milisecend`);
+// let count = 0
+// let interval = setInterval(() => {
+//     count = count + 3000;
+//     if (count == 15000) {
+//         clearInterval(interval)
+//     }
+//     console.log(`${count} Milisecend`);
 
-}, 3000);
-console.log("End");
+// }, 3000);
+// console.log("End");
 
 
 
@@ -167,3 +170,155 @@ console.log("End");
 
 ////////////////////////////////////////////////// example 3////////////////////////////////
 
+// prom = new Promise((res, rej) => {
+//     var a = false
+//     if (a)
+//         res("success")
+//     else
+//         rej("rejact")
+
+// })
+// prom.then((result) => {
+//     console.log(result);
+// }).catch((err) => {
+//     console.log(err);
+
+// });
+
+
+/////////////////////////get data by promise//////////////////
+/////////////////////////chained promise.////////////////////
+// const p = new Promise((res, rej) => {
+//     let getData = true
+//     if (getData) {
+//         setTimeout(() => {
+//             console.log("Get Data");
+//             res("get Data")
+//         }, 3000);
+//     }
+//     else {
+//         console.log("No Data loaded");
+//         rej("no data")
+//     }
+// })
+
+
+// p.then((result) => {
+//     console.log(result);
+// }).catch((err) => {
+//     console.log(err);
+
+// });
+
+// /////////////////////////example//////////////////
+// function num(a) {
+//     return new Promise((res, rej) => {
+//         if (a <= 10) {
+//             res(a);
+//         } else {
+
+//             rej(a);
+//         }
+//     })
+
+// }
+// num(2).then((result) => {
+//     console.log(`Number ${result} is less then 10`);
+
+// }).catch((err) => {
+//     console.log(`Number ${err} is greater then 10`);
+
+// });
+
+////////////////////////same above///////////////////
+
+// const f = (res, rej) => {
+//     if (a <= 10) {
+//         res(a);
+//     } else {
+
+//         rej(a);
+//     }
+// }
+
+// function num(a) {
+//     return new Promise(f)
+
+// }
+// num(2).then((result) => {
+//     console.log(`Number ${result} is less then 10`);
+
+// }).catch((err) => {
+//     console.log(`Number ${err} is greater then 10`);
+
+// });
+///////////////////////////////////chain promise///////////////////.
+// const p = new Promise((res, rej) => {
+//     let a = true;
+//     if
+//         (a) {
+
+//         res("get conection")
+//     }
+//     else {
+//         rej("not conetied")
+
+//     }
+
+// })
+
+
+
+// p.then((result) => {
+//     console.log(result);
+//     return "get data"
+// }).then((result) => {
+//     console.log(result);
+//     return "data formt"
+// }).then((result) => {
+//     console.log(result);
+//     return "Display data"
+// }).then((result) => {
+//     console.log(result);
+// }).catch((err) => {
+//     console.log(err);
+
+// });
+
+
+///////////////////////example :2/////////////////
+
+
+// const p = new Promise((res, rej) => {
+//     let a = true;
+//     if
+//         (a) {
+//         setTimeout(() => {
+//             res("get conection")
+
+//         }, 3000);
+//     }
+//     else {
+//         rej("not conetied")
+
+//     }
+
+// })
+
+
+
+// p.then((result) => {
+//     console.log(result);
+//     return "get data"
+// }).then((result) => {
+//     console.log(result);
+//     return "data formt"
+// }).then((result) => {
+//     console.log(result);
+//     return "Display data"
+// }).then((result) => {
+//     console.log(result);
+// }).catch((err) => {
+//     console.log(err);
+
+// });
