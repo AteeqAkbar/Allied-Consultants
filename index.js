@@ -322,3 +322,17 @@
 //     console.log(err);
 
 // });
+
+//////////////////////async   await////////////////////////
+// async function foo() {
+//     console.log("A");
+//     console.log("b");
+//     await setTimeout(() => {
+//         console.log("get con");
+//     }, 5000);
+//     console.log("c");
+
+// }
+// foo()
+// console.log("D");
+// console.log("E");
