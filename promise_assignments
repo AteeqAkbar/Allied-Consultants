@@ -1,0 +1,42 @@
+// function job() {
+//     return new Promise(function (resolve, reject) { reject(); });
+// }
+// let promise = job();
+// promise.then(function () {
+//     console.log('Success 1');
+// })
+//     .then(function () { console.log('Success 2'); })
+//     .then(function () { console.log('Success 3'); })
+//     .catch(function () { console.log('Error 1'); })
+//     .then(function () { console.log('Success 4'); })
+//     .then(function () { console.log('Success 5'); });
+
+
+// var p1 = new Promise(function (resolve, reject) {
+//     resolve('Success');
+// });
+
+// p1.then(function (value) {
+//     console.log(value); // "Success!"
+//     throw new Error('oh, no!');
+// }).catch(function (e) {
+//     console.error(e.message); // "oh, no!"
+// }).then(function () {
+//     console.log('after a catch the chain is restored');
+// }, function () {
+//     console.log('Not fired due to the catch');
+// });
+
+// The following behaves the same as above
+// p1.then(function (value) {
+//     console.log(value); // "Success!"
+//     return Promise.reject('oh, no!');
+// }).catch(function (e) {
+//     console.error(e); // "oh, no!"
+// }).then(function () {
+//     console.log('after a catch the chain is restored');
+// }, function () {
+//     console.log('Not fired due to the catch');
+// });
+
+
