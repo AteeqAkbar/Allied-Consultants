@@ -336,3 +336,46 @@
 // foo()
 // console.log("D");
 // console.log("E");
+
+
+///////////////////
+
+/////////////////////////////
+/////////////////////////working prfect////////////////////
+// function sum() {
+//     total = 0
+//     for (i in arguments) {
+//         total += arguments[i]
+
+//     }
+//     console.log(total);
+// }
+// sum(20, 80, 90, 70);
+
+/////////////not working prfect using arow fuction/////////////
+
+// var sum = () => {
+//     total = 0
+//     for (i in arguments) {
+//         total += arguments[i]
+
+//     }
+//     console.log(total);
+// }
+// sum(20, 80, 90, 70);
+
+/////////////////rest oprater/////////////////
+////rest oprater must be in last (...arr)
+// function sum(name, lastName, ...arr) {
+//     total = 0
+//     for (i in arr) {
+//         total += arr[i]
+
+//     }
+//     console.log(name);
+//     console.log(lastName);
+
+//     console.log(total);
+// }
+// sum("Ateeq", "Akbar", 90, 70);
+
