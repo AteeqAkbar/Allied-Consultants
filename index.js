@@ -364,6 +364,20 @@
 // }
 // sum(20, 80, 90, 70);
 
+
+
+///////////////////solution//////////////////////
+
+
+// var sum = (...arguments) => {
+//     total = 0;
+//     for (i in arguments) {
+//         total += arguments[i]
+//     }
+//     console.log(total);
+// }
+// sum(20, 80, 90, 70);
+
 /////////////////rest oprater/////////////////
 ////rest oprater must be in last (...arr)
 // function sum(name, lastName, ...arr) {
@@ -379,3 +393,90 @@
 // }
 // sum("Ateeq", "Akbar", 90, 70);
 
+
+
+
+////////////////////////////////////////Error handler //////////////////////////////////
+
+
+///////////////////////////////////////not complete //////////////////////////////////
+
+// const get = () => {
+//     return new Promise((res, rej) => {
+//         var a = true
+//         if (a) {
+//             res("get conected")
+//         } else { rej("not concted") }
+//     })
+// }
+
+// const data = () => {
+//     return new Promise((res, rej) => {
+//         var a = ture
+//         if (a) {
+//             res("get data")
+//         } else { rej("not data") }
+//     })
+// }
+
+// function handleerr(e) {
+//     e.then(result => { [result, undefined])
+// }
+// e.catch(err => { Promise.resolve([undefined, err]))}
+
+// }
+
+// async function foo() {
+
+
+
+
+
+//     // const result = await get().catch(err => console.log(err))
+//     // const data1 = await data().catch(err => console.log(err))
+
+//     const [result, err] = await handleerr(get())
+//     // const data1 [] = await handleerr(data())
+
+
+//     console.log(result);
+//     console.log(data1);
+// }
+
+// foo();
+
+
+
+/////////////////////////////////// var, let, const////////////////////////////
+
+//           var ===== global ,function,redeclare
+
+
+// let a = 10;
+// var val = 5
+// if (val = 3) {
+//     let a = 20
+//     console.log(a);
+// }
+// console.log(a);
+
+//////////////////////////distrcting  And rest spread oprater///////////////////////
+// let a, b, rest;
+// [a, b] = [10, 20];
+// console.log(a); // 10
+// console.log(b); // 20
+
+// [a, b, ...rest] = [10, 20, 30, 40, 50];
+// console.log(a); // 10
+// console.log(b); // 20
+// console.log(rest); // [30, 40, 50]
+
+// ({ a, b } = { a: 10, b: 20 });
+// console.log(a); // 10
+// console.log(b); // 20
+
+// // Stage 4(finished) proposal
+// ({a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40});
+// console.log(a); // 10
+// console.log(b); // 20
+// console.log(rest); // {c: 30, d: 40}
