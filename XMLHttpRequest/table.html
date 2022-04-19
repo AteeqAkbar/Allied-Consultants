@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="contaner">
+        asassa
+    </div>
+
+    <script>
+        var xrl = new XMLHttpRequest();
+        xrl.open("GET", "https://api.covidtracking.com/v1/us/daily.json")
+
+        xrl.send()
+        xrl.addEventListener("load", dataloaded)
+
+
+
+        function dataloaded() {
+            if (xrl.readyState == 4 && this.status == 200) {
+                // console.log(xrl.responseText);
+                const data = JSON.parse(xrl.responseText);
+                document.getElementById("contaner").innerHTML += `  date ${data[0].date}`
+                console.log(data[0].date);
+                console.log(data[0].positive);
+                console.log(data[0].date);
+                console.log(data[0].date);
+
+
+                // const [ateq, aness] = document.getElementById("contaner").innerHTML = data
+                // console.log(ateq);
+                // console.log(aness);
+
+            }
+        }</script>
+</body>
+
+</html>

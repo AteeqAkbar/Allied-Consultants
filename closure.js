@@ -7,13 +7,13 @@
 //     var x = 1;
 
 //     return () => {
-//         var y = 10;
+//         // var y = 10;
 
 //         x++
-//         y++
-//         console.log(y);
+//         // y++
+//         // console.log("Y", y);
 
-//         console.log(x);
+//         console.log("X", x);
 //     }
 // }
 
@@ -33,8 +33,11 @@
 // const add5 = add(5)
 // console.log(add5(10));
 ////////////////////////////////an other way//////////////////////////
-function add(x) {
-    return (y) => x + y;
-}
+// function add(x) {
+//     return (y) => x + y;
+// }
 
-console.log(add(10)(9));
+// console.log(add(10)(9));
+
+
+
